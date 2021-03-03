@@ -1,4 +1,4 @@
-# odin_javaScript_1_library
+# odin_javaScript_1_library (Under Development)
 
 Project:
 Extend the ‘Book’ example from the previous lesson and turn it into a small Library app. 
