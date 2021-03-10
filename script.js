@@ -124,6 +124,7 @@ function updateLocalStorage(){
   });
 }
 
+//function to update the display table using localStorage values
 function updateDisplay(){
   clearTable();
   //for each book bk in myLibrary with index i, do the following:
