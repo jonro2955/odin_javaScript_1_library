@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library by JR</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1 id="pageTitle">Virtual Library</h1>
+  
+  <div id="description">An exercise in JavaScript object oriented programming.<br>
+    Each book entry is created using a JavaScript Object Constructor, and contains<br>
+    5 properties: "title" (a string), "author" (a string), "pages" (a number), "URL" (a string), and "read" (a boolean).<br>
+    Each book object shares methods defined in its "Book" object prototype to access and change its properties.<br>
+    Click the "Add +" button to add a new book to the libray.<br>
+    Click the "Read" button on each book to change its read status.<br>
+    Click the "Delete" button on each book to remove it from the collection.
+  </div>
+
+  
+  <button id="addBtn">Add +</button>
+
+  <div class="headingsRow">      
+    <div class="headings">Title</div>
+    <div class="headings">Author</div>
+    <div class="headings">Pages</div>
+    <div class="headings">Link</a></div>
+    <div class="headings">Read</div>
+    <div class="headings">Delete</div>
+  </div>
+
+  <div id="table">
+  </div>
+
+  <div id="bookCreator">
+    <button id="creatorCloseBtn">x</button>
+    <div id="creatorLabel">Book Creator</div><br>
+    <label for="newTitle">Title:</label>
+    <input type="text" id="newTitle" name="newTitle" required="required"><br>
+    <label for="newAuthor">Author:</label>
+    <input type="text" id="newAuthor" name="newAuthor" required="required"><br>
+    <label for="newPages">Pages:</label>
+    <input type="number" id="newPages" name="newPages" required="required"><br>
+    <label for="newLink">Link:</label>
+    <input type="text" id="newLink" name="newLink" required="required"><br>
+    <div>
+      <label for="newStatus">Read</label>
+      <input type="checkbox" id="newStatus" name="newStatus">
+    </div>
+    <br><button id="submitBtn">Add</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

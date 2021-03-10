@@ -1,0 +1,95 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical */
+}
+#pageTitle{
+  margin: 10px;
+}
+#description{
+  margin: 10px;
+  text-align: center;
+}
+#addBtn{
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border:darkmagenta 5px solid;
+}
+#creatorLabel{
+  font-size: large;
+}
+#creatorCloseBtn{
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+#bookCreator{
+  /* height: 500px;
+  width: 300px; */
+  position: absolute;
+  background-color: blanchedalmond;
+  top: 100px;
+  display:none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:darkmagenta 5px solid;
+  border-radius: 10px;
+  padding:5px;
+}
+#submitBtn{
+  width:200px;
+  height: 40px;
+}
+#table{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical */
+}
+.headingsRow{
+  width: 1150px;
+  background-color:aqua;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* vertical */
+  border: blue 1px solid;
+  margin: 10px;
+  border-radius: 5px;;
+}
+.headings{
+  width: 180px;
+  height: 25px;
+  display:flex;
+  align-items: center;
+  justify-content: center; /* vertical */
+}
+.book{
+  background-color:chartreuse;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* vertical */
+  border: blue 1px solid;
+  margin: 10px;
+}
+.attribute{
+  width: 180px;
+  height: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center; /* vertical */
+}
+.bookEntryBtns{
+  width: 180px;
+  height: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center; /* vertical */
+  background-color:cyan;
+}
