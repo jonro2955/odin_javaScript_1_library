@@ -1,7 +1,7 @@
-# odin_javaScript_1_library
+# odin_javaScript_1_library (Under Development)
 
 Project:
-Extend the ‘Book’ example from the previous lesson and turn it into a small Library app. 
+Extend the ‘Book’ example from the previous lesson (Objects and Object Constructors) and turn it into a small Library app. 
 If you haven’t already, set up your project with skeleton HTML/CSS and JS files.
 All of your book objects are going to be stored in a simple array, so add a function to the script (not the constructor) that can take user’s input and store the new book objects into an array. Your code should look something like this:
 
