@@ -22,6 +22,7 @@ Book.prototype.toggleRead = function(){
   }
 }
 
+//removes all elements in the html table element
 function clearTable(){
   const table = document.querySelector("#table");
   while (table.firstChild) {
@@ -79,12 +80,13 @@ addBtn.addEventListener("click", () => {
   }
 });
 
+//creatorCloseBtn clears all fields and closes the creator
 const creatorCloseBtn = document.querySelector("#creatorCloseBtn");
 creatorCloseBtn.addEventListener("click", () => {
   closeCreator();  
 });
 
-/*book creator's submit button: when clicked, create a book using
+/*book creator submit button: when clicked, create a book using
 the input values, push it into the array, and update the storage*/
 const submitBtn = document.querySelector("#submitBtn");
 submitBtn.addEventListener("click", () => {
@@ -102,15 +104,15 @@ submitBtn.addEventListener("click", () => {
   if(newTitle != "" && newAuthor != ""){
     let newBook = new Book(newTitle, newAuthor, newPages, newURL, newStatus);
     myLibrary.push(newBook);
-    updateLocalStorage(); //updateLocalStorage anytime myLibrary changes
-    updateDisplay(); //updateDisplay anytime local storage is updated
+    updateLocalStorage(); //always updateLocalStorage when myLibrary changes
+    updateDisplay(); //always updateDisplay when local storage is updated
     closeCreator();
   } else {
     alert("Please fill out the 'Title' and 'Author' fields to continue.")
   }
 });
 
-//updateLocalStorage: first clear it, then update based on myLibrary[]
+//updateLocalStorage: first clear the storage, then update based on myLibrary[]
 function updateLocalStorage(){
   localStorage.clear();
   myLibrary.forEach((book, index) => {
