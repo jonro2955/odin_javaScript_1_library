@@ -35,7 +35,7 @@ function closeCreator(){
   document.getElementById("newTitle").value = "";
   document.getElementById("newAuthor").value = "";
   document.getElementById("newPages").value = "";
-  document.getElementById("newLink").value = "";
+  document.getElementById("newURL").value = "";
   document.getElementById("newStatus").checked = false;
   document.querySelector("#bookCreator").style.display = "none";
 }
