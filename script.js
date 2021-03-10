@@ -198,7 +198,6 @@ function updateLocalStorage(){
 let sampleBook0 = new Book("sampleBook0", "Author0", 256, "https://www.amazon.com/", true);
 let sampleBook1 = new Book("sampleBook1", "Author1", 321, "https://www.amazon.com/", false);
 let sampleBook2 = new Book("sampleBook2", "Author2", 456, "https://www.barnesandnoble.com/", false);
-
 myLibrary.push(sampleBook0);
 myLibrary.push(sampleBook1);
 myLibrary.push(sampleBook2);
