@@ -1,3 +1,4 @@
+
 body{
   display: flex;
   flex-direction: column;
@@ -9,7 +10,6 @@ body{
 }
 #description{
   margin: 10px;
-  text-align: center;
 }
 #addBtn{
   margin: 10px;
@@ -48,6 +48,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center; /* vertical */
+  height: 100%;
+
 }
 .headingsRow{
   width: 1150px;
@@ -75,19 +77,24 @@ body{
   justify-content: center; /* vertical */
   border: blue 1px solid;
   margin: 10px;
+  height: 100%;
 }
 .attribute{
   width: 180px;
-  height: 20px;
+  height: 100%;
   display:flex;
   align-items: center;
   justify-content: center; /* vertical */
+  overflow: visible;
 }
 .bookEntryBtns{
   width: 180px;
-  height: 20px;
+  height: 100%;
   display:flex;
   align-items: center;
   justify-content: center; /* vertical */
   background-color:cyan;
+}
+#reset{
+  bottom: 0px;
 }

@@ -9,17 +9,28 @@
 
   <h1 id="pageTitle">Virtual Library</h1>
   
-  <div id="description">An exercise in JavaScript object oriented programming.<br>
-    Each book entry is created using a JavaScript Object Constructor, and contains<br>
-    5 properties: "title" (a string), "author" (a string), "pages" (a number), "URL" (a string), and "read" (a boolean).<br>
-    Each book object shares methods defined in its "Book" object prototype to access and change its properties.<br>
-    <!-- This webpage also uses the local storage API to store the book object values. This means that your book entries will be saved in your local memory so that even when you close your browser tab, your books will remain as they were when you return. -->
-    Click the "Add +" button to add a new book to the libray.<br>
-    Click the "Read" button on each book to change its read status.<br>
-    Click the "Delete" button on each book to remove it from the collection.
+  <div id="description">
+    <p>This project is an exercise in JavaScript object oriented 
+      programming and browser memory storage.</p>
+    <p>Each book entry is created using a JavaScript object constructor and has 5 
+      properties: "Title" (string), "Author" (string), "Pages" (number),
+      "URL" (string), and "read" (boolean). Each book object shares 
+      methods defined in its object prototype to access and change its 
+      properties.</p>
+    <p>Click the "Add +" button to add a new book to the libray.
+      Click the "Read" button on each book to change its read status.
+      Click the "Delete" button on each book to remove it from the collection.</p>
+    <p>This web app uses your browser's "localStorage API" to store your 
+      books on your device's memory. You can test this feature by making changes 
+      and refreshing the page or closing and reloading it. To see what 
+      data is currently stored in your browser's local memory for this webpage, 
+      press F12 to open developer tools, find the "Application" tab (may be 
+      hidden in an arrow), expand the "Local Storage" menu on the left panel, 
+      and select this wepage's URL. Your books will remain in memory until you 
+      perform "clear browsing data" or until you click the provided "Clean Reset" 
+      button.</p>
   </div>
 
-  
   <button id="addBtn">Add +</button>
 
   <div class="headingsRow">      
@@ -48,9 +59,13 @@
     <div>
       <label for="newStatus">Read</label>
       <input type="checkbox" id="newStatus" name="newStatus">
-    </div>
-    <br><button id="submitBtn">Add</button>
+    </div><br>
+    <button id="submitBtn">Add</button>
   </div>
+
+  <button id="cleanReset">Clear All</button>
+  <button id="sample3Reset">Reload With 3 Initial Books</button>
+
 
   <script src="script.js"></script>
 </body>
