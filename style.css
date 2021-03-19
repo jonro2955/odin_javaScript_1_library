@@ -5,6 +5,12 @@ body{
   align-items: center;
   justify-content: center; /* vertical */
 }
+p{
+  text-align: center;
+}
+input{
+  width:300px;
+}
 #pageTitle{
   margin: 10px;
 }
@@ -19,7 +25,7 @@ body{
   border:darkmagenta 5px solid;
 }
 #creatorLabel{
-  font-size: large;
+  font-size: 30px;
 }
 #creatorCloseBtn{
   position:absolute;
@@ -29,7 +35,7 @@ body{
 #bookCreator{
   position: absolute;
   background-color: blanchedalmond;
-  top: 100px;
+  top: 280px;
   display:none;
   flex-direction: column;
   align-items: center;
@@ -37,8 +43,35 @@ body{
   border:darkmagenta 5px solid;
   border-radius: 10px;
   padding:5px;
+  width: 500px;
 }
-#submitBtn{
+#bookEditor{
+  position: absolute;
+  background-color: blanchedalmond;
+  top: 300px;
+  display:none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border:darkmagenta 5px solid;
+  border-radius: 10px;
+  padding:5px;
+  width: 500px;
+}
+#editorTitle{
+  font-size: 30px;
+}
+#editorCloseBtn{
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+#editorLabel{
+  font-size: large;
+}
+
+#submitNewBtn{
   width:200px;
   height: 40px;
 }
@@ -52,7 +85,6 @@ body{
 
 }
 .headingsRow{
-  width: 1150px;
   background-color:aqua;
   display:flex;
   flex-direction: row;
@@ -60,7 +92,8 @@ body{
   justify-content: center; /* vertical */
   border: blue 1px solid;
   margin: 10px;
-  border-radius: 5px;;
+  padding: 5px;
+  /* border-radius: 5px;; */
 }
 .headings{
   width: 180px;
@@ -78,6 +111,8 @@ body{
   border: blue 1px solid;
   margin: 10px;
   height: 100%;
+  padding: 2px;
+  border-radius: 5px;;
 }
 .attribute{
   width: 180px;
@@ -94,6 +129,7 @@ body{
   align-items: center;
   justify-content: center; /* vertical */
   background-color:cyan;
+  border-radius: 5px;
 }
 #reset{
   bottom: 0px;

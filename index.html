@@ -1,72 +1,21 @@
+<!-- this page will give visitors the option to choose cloud or local storage -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Library by JR</title>
+  <title>Main Menu</title>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <h1 id="pageTitle">Virtual Library</h1>
-  
-  <div id="description">
-    <p>This project is an exercise in JavaScript object oriented 
-      programming and browser memory storage.</p>
-    <p>Each book entry is created using a JavaScript object constructor and has 5 
-      properties: "Title" (string), "Author" (string), "Pages" (number),
-      "URL" (string), and "read" (boolean). Each book object shares 
-      methods defined in its object prototype to access and change its 
-      properties.</p>
-    <p>Click the "Add +" button to add a new book to the libray.
-      Click the "Read" button on each book to change its read status.
-      Click the "Delete" button on each book to remove it from the collection.</p>
-    <p>This web app uses your browser's "localStorage API" to store your 
-      books on your device's memory. You can test this feature by making changes 
-      and refreshing the page or closing and reloading it. To see what 
-      data is currently stored in your browser's local memory for this webpage, 
-      press F12 to open developer tools, find the "Application" tab (may be 
-      hidden in an arrow), expand the "Local Storage" menu on the left panel, 
-      and select this wepage's URL. Your books will remain in memory until you 
-      perform "clear browsing data" or until you click the provided "Clean Reset" 
-      button.</p>
-  </div>
+  <h1>Virtual Library</h1>
 
-  <button id="addBtn">Add +</button>
+  <p>Please select from the following options:</p><br>
 
-  <div class="headingsRow">      
-    <div class="headings">Title</div>
-    <div class="headings">Author</div>
-    <div class="headings">Pages</div>
-    <div class="headings">Link</a></div>
-    <div class="headings">Read</div>
-    <div class="headings">Delete</div>
-  </div>
+  <a class="button"  href="local.html">Local Storage</a><br>
 
-  <div id="table">
-  </div>
+  <a class="button"  href="cloud.html">Cloud Storage</a>
 
-  <div id="bookCreator">
-    <button id="creatorCloseBtn">x</button>
-    <div id="creatorLabel">Book Creator</div><br>
-    <label for="newTitle">Title:</label>
-    <input type="text" id="newTitle" name="newTitle" required="required"><br>
-    <label for="newAuthor">Author:</label>
-    <input type="text" id="newAuthor" name="newAuthor" required="required"><br>
-    <label for="newPages">Pages:</label>
-    <input type="number" id="newPages" name="newPages" required="required"><br>
-    <label for="newLink">Link:</label>
-    <input type="text" id="newURL" name="newURL" required="required"><br>
-    <div>
-      <label for="newStatus">Read</label>
-      <input type="checkbox" id="newStatus" name="newStatus">
-    </div><br>
-    <button id="submitBtn">Add</button>
-  </div>
-
-  <button id="cleanReset">Clear All</button>
-  <button id="sample3Reset">Reload With 3 Initial Books</button>
-
-
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
-</html>
+</html> 

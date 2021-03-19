@@ -1,7 +1,12 @@
-# odin_javaScript_1_library (Under Development)
+# odin_javaScript_1_library
+
+This is the first project from The Odin Project's Full Stack JavaScript curriculum. Live version:
 https://jonro2955.github.io/odin_javaScript_1_library/
 
-Project:
+It is a simple library app that allows users to maintain a catalogue of book information. There are 2 versions: The local storage version stores the data objects in the user's device memory throught the use of it browser's localStorage API, and the cloud version uses Google's Firebase cloud database service to store the data objects in one of Google's cloud servers. 
+
+Project Instructions:
+
 Extend the ‘Book’ example from the previous lesson (Objects and Object Constructors) and turn it into a small Library app. 
 If you haven’t already, set up your project with skeleton HTML/CSS and JS files.
 All of your book objects are going to be stored in a simple array, so add a function to the script (not the constructor) that can take user’s input and store the new book objects into an array. Your code should look something like this:
