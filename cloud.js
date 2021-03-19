@@ -1,5 +1,5 @@
 /**For the cloud version, all data will be stored and retrieved directly 
- * from the cloud without an intermediary holding array*/
+ * from the cloud without an intermediary holding array.*/
 
 function Book(title, author, pages, url, read){
   this.title = title;
@@ -7,22 +7,6 @@ function Book(title, author, pages, url, read){
   this.pages = pages;
   this.url = url;
   this.read = read;
-}
-
-Book.prototype.edit = function(titleNew, authorNew, pagesNew, urlNew, readNew){
-  this.title = titleNew;
-  this.author = authorNew;
-  this.pages = pagesNew;
-  this.url = urlNew;
-  this.read = readNew;
-}
-
-Book.prototype.toggleRead = function(){
-  if(this.read){
-    this.read = false;
-  } else {
-    this.read = true;
-  }
 }
 
 const sampleBooks = {
