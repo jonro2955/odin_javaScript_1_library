@@ -1,5 +1,9 @@
 /**For the cloud version, all data will be stored and retrieved directly 
- * from the cloud without an intermediary holding array.*/
+ * from the cloud without an intermediary holding array. With this setup,
+ * there is no need for prototype methods to change the book objects as 
+ * once the object is created and stored to the cloud, any changes will be 
+ * applied directly onto the cloud objects instead of altering a local version 
+ * and copying it to the cloud. */
 
 function Book(title, author, pages, url, read){
   this.title = title;
@@ -57,7 +61,7 @@ creatorCloseBtn.addEventListener("click", () => {
   closeCreator();  
 });
 
-//wire up the editor close button
+//editor close button
 const editorCloseBtn = document.querySelector("#editorCloseBtn");
 editorCloseBtn.addEventListener("click", () => {
   document.querySelector("#bookEditor").style.display = "none";
@@ -96,7 +100,8 @@ clearAll.addEventListener("click", () => {
 // 3 sample reload button 
 const sample3ResetBtn = document.querySelector("#sample3Reset");
 sample3ResetBtn.addEventListener("click", () => {
-  initialize3();
+  firebase.database().ref().set(sampleBooks);
+  displayStorage();
 });
 
 //remove all visual elements in the html #table element
@@ -241,13 +246,6 @@ function displayStorage(){
   });
 }
 
-//Initialize with 3 sample books at initial load
-function initialize3(){
-  firebase.database().ref().remove();
-  firebase.database().ref().set(sampleBooks);
-  displayStorage();
-}
-
-initialize3();
+displayStorage();
 
 
