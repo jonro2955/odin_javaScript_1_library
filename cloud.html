@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Storage Library</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <a href="index.html">Back To Main Menu</a> 
+  <a href="local.html">Switch To Local Storage Version</a> 
+
+  <h1 id="pageTitle">Cloud Storage Library</h1>
+  
+  <div id="description">
+    <p>This webpage is an exercise in JavaScript object oriented 
+      programming and cloud data storage. The focus for this project 
+      is on back end development, so the visual presentation is left 
+      intentionally sparse.</p>
+    <p>Each book is a JavaScript object with 5 
+      properties: "Title" (string), "Author" (string), "Pages" (number),
+      "URL" (string), and "Read" (boolean). Object methods are defined in its prototype
+      to be shared amongst all instances.</p>
+    <p>This page uses Google's 
+      <a target="blank" href="https://firebase.google.com/">Firebase</a> 
+      cloud database service to store this webpage's data in the cloud.</p>
+    <p>Click the "Add +" button to add a new book to the library.
+      Click the "Read" button on each book to change its read status.
+      Click the "Delete" button on each book to remove it from the collection.</p>
+  </div>
+
+  <button id="addBtn">Add +</button>
+
+  <div class="headingsRow">      
+    <div class="headings">Title</div>
+    <div class="headings">Author</div>
+    <div class="headings">Pages</div>
+    <div class="headings">Link</a></div>
+    <div class="headings">Read</div>
+    <div class="headings">Edit</div>
+    <div class="headings">Delete</div>
+  </div>
+
+  <div id="table">
+  </div>
+
+  <div id="bookCreator">
+    <button id="creatorCloseBtn">x</button>
+    <div id="creatorLabel">Book Creator</div><br>
+    <label for="newTitle">Title:</label>
+    <input type="text" id="newTitle" name="newTitle" required="required"><br>
+    <label for="newAuthor">Author:</label>
+    <input type="text" id="newAuthor" name="newAuthor" required="required"><br>
+    <label for="newPages">Pages:</label>
+    <input type="number" id="newPages" name="newPages" required="required"><br>
+    <label for="newLink">Link:</label>
+    <input type="text" id="newURL" name="newURL" required="required"><br>
+    <label for="newStatus">Read Status</label>
+    <input type="checkbox" id="newStatus" name="newStatus"><br>
+    <button id="submitNewBtn">Add</button>
+  </div>
+
+  <div id="bookEditor">
+    <button id="editorCloseBtn">x</button>
+    <div id="editorTitle">Edit Book</div><br>
+    <div id="editorLabel"></div><br>
+    <label for="editedTitle">Edit Title:</label>
+    <input type="text" id="editedTitle" name="editedTitle" required="required"><br>
+    <label for="editedAuthor">Edit Author:</label>
+    <input type="text" id="editedAuthor" name="editedAuthor" required="required"><br>
+    <label for="editedPages">Edit Pages:</label>
+    <input type="number" id="editedPages" name="editedPages" required="required"><br>
+    <label for="editedURL">Edit Link:</label>
+    <input type="text" id="editedURL" name="editedURL" required="required"><br>
+    <div>
+      <label for="editedStatus">Edit Read Status:</label><br>
+      <input type="checkbox" id="editedStatus" name="editedStatus">
+    </div><br>
+    <button id="submitEditBtn">Submit</button>
+  </div>
+
+  <button id="clearAll">Clear All</button><br>
+  <button id="sample3Reset">Reload With 3 Sample Books</button>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+  <script src="cloud.js"></script>
+</body>
+</html>
