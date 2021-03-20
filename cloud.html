@@ -14,20 +14,27 @@
   <h1 id="pageTitle">Cloud Storage Library</h1>
   
   <div id="description">
-    <p>This webpage is an exercise in JavaScript object oriented 
-      programming and cloud data storage. The focus for this project 
-      is on back end development, so the visual presentation is left 
-      intentionally sparse.</p>
-    <p>Each book is a JavaScript object with 5 
-      properties: "Title" (string), "Author" (string), "Pages" (number),
-      "URL" (string), and "Read" (boolean).</p>
-    <p>This page uses Google's 
-      <a target="blank" href="https://firebase.google.com/">Firebase</a> 
-      cloud database service to store your data in the cloud.</p>
-    <p>Click the "Add +" button to add a new book to the library.
+    <p>
+      Click the "Add +" button to add a new book to the library.
       Click the "Read" button on each book to change its read status.
-      Click the "Delete" button on each book to remove it from the collection.</p>
-  </div>
+      Click the "Delete" button on each book to remove it from the collection.
+    </p>
+    <p>
+      In this version, your books will be stored in a remote Google server
+      as provided by Google's
+      <a target="blank" href="https://firebase.google.com/">Firebase</a> 
+      service (free version). 
+      You can test this feature by making changes and reloading or closing
+      and reopening this page. 
+      Any changes you make will change the cloud database in real time,
+      and will remain as long as the server is online. 
+      The button labeled "Reset With 3 Sample Books"
+      will restore this site back to its initial state by running a 
+      script that will reload only the 3 initial sample books back 
+      into the cloud.
+    </p>
+
+    </div>
 
   <button id="addBtn">Add +</button>
 
