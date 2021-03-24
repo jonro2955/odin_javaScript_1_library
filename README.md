@@ -3,7 +3,9 @@
 This is the first project from The Odin Project's Full Stack JavaScript curriculum. Live version:
 https://jonro2955.github.io/odin_javaScript_1_library/
 
-It is a simple library app that allows users to maintain a catalogue of book information. There are 2 versions: The local storage version stores the data objects in the user's device memory throught the use of it browser's localStorage API, and the cloud version uses Google's Firebase cloud database service to store the data objects in one of Google's cloud servers. 
+It is a simple library app that allows users to maintain a catalogue of book information. There are 2 versions: 
+(1) The cloud version uses my personal Google Firebase account to store the data in the cloud. 
+(2) The local storage version stores the data in the users' device through the use of their browser's localStorage API. 
 
 Project Instructions:
 
