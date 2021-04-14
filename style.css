@@ -5,24 +5,44 @@ body{
   align-items: center;
   justify-content: center; /* vertical */
 }
-p{
-  text-align: center;
-}
 input{
   width:300px;
 }
+
+button{
+  background-color:darkmagenta;
+  color: white;
+  border-radius: 25%;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+#navDiv{
+  display:flex;
+  gap: 100px;
+  /* border: 1px black solid; */
+}
+
+#navLink{
+  color: white;
+}
 #pageTitle{
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
 }
 #description{
   margin: 10px;
+  width: 750px;
+  text-align: center;
+  /* border: 1px black solid; */
+
 }
 #addBtn{
+  font-size: 25px;
   margin: 10px;
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  border:darkmagenta 5px solid;
+  height: 80px;
+  width: 150px;
+  border-radius: 25%;
+  border-width: 5px;
 }
 #creatorLabel{
   font-size: 30px;
@@ -34,8 +54,8 @@ input{
 }
 #bookCreator{
   position: absolute;
+  top: 150px;
   background-color: blanchedalmond;
-  top: 280px;
   display:none;
   flex-direction: column;
   align-items: center;
@@ -47,8 +67,8 @@ input{
 }
 #bookEditor{
   position: absolute;
+  top: 150px;
   background-color: blanchedalmond;
-  top: 300px;
   display:none;
   flex-direction: column;
   text-align: center;
@@ -85,15 +105,16 @@ input{
 
 }
 .headingsRow{
-  background-color:aqua;
+  background-color:darkmagenta;
+  border: rgb(228, 124, 228) 5px solid;
+  color:white;
   display:flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; /* vertical */
-  border: blue 1px solid;
-  margin: 10px;
-  padding: 5px;
-  /* border-radius: 5px;; */
+  margin: 10px 0 -10px 0;
+  padding: 5px 40px 5px 40px;
+  border-radius: 5px;;
 }
 .headings{
   width: 180px;
@@ -108,7 +129,7 @@ input{
   flex-direction: row;
   align-items: center;
   justify-content: center; /* vertical */
-  border: blue 1px solid;
+  border: rgb(11, 90, 1) 5px solid;
   margin: 10px;
   height: 100%;
   padding: 2px;
@@ -124,21 +145,27 @@ input{
 }
 .bookEntryBtns{
   width: 180px;
-  height: 100%;
+  color: black;
   display:flex;
   align-items: center;
   justify-content: center; /* vertical */
   background-color:cyan;
-  border-radius: 5px;
+  height: 50px;
+  border-radius: 25%;
+  border-width: 5px;
+
 }
-#reset{
-  bottom: 0px;
+.bottomBtn{
+  height: 55px;
+  border-radius: 25%;
+  border-width: 5px;
 }
 #credits{
-  margin: 450px 0 30px 0;
+  margin-top: 50px;
   text-align: center;
   font-family: 'Courgette', cursive;
 }
 #indexOption{
-  font-size: 35px;
+  font-size: 25px;
+  color: white;
 }

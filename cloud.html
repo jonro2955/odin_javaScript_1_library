@@ -7,42 +7,33 @@
 </head>
 <body>
 
-  <a href="index.html">Back To Main Menu</a> 
-
-  <a href="local.html">Switch To Local Storage Version</a> 
+  <div id="navDiv">
+    <button id="navBtn">    
+      <a  id="navLink" href="index.html">&lt;&lt;Back To Main Menu</a> 
+    </button>
+    <button id="navBtn">    
+      <a  id="navLink" href="local.html">Switch To Local Storage</a> 
+    </button>
+  </div>
 
   <h1 id="pageTitle">Cloud Storage Library</h1>
   
   <div id="description">
-    <p>
-      Click the "Add +" button to add a new book to the library.
-      Click the "Read" button on each book to change its read status.
-      Click the "Delete" button on each book to remove it from the collection.
-    </p>
-    <p>
-      In this version, your books will be stored in a remote Google server
-      as provided by Google's
-      <a target="blank" href="https://firebase.google.com/">Firebase</a> 
-      service (free version). 
-      You can test this feature by making changes and then reloading or closing
-      and reopening this page. 
-      Any changes you make here will change the cloud database in real time. 
-      The button labeled "Reset With 3 Sample Books"
-      will restore this site back to its initial state by running a 
-      script that will reset the cloud database with only the 3 selected 
-      sample books.
-    </p>
+    In this version, data is stored in and retrieved from the cloud using
+    <a target="blank" href="https://firebase.google.com/">Firebase</a>. 
+    Changes made here will update the database in real time and will persist throughout page reloads. 
+    Each book is stored as an object with 5 key-value pair properties: Title (string), Author (string),
+    Pages (number), Link (string), and Read (boolean).
+  </div>
 
-    </div>
-
-  <button id="addBtn">Add +</button>
+  <button id="addBtn">Add New Book +</button>
 
   <div class="headingsRow">      
     <div class="headings">Title</div>
     <div class="headings">Author</div>
     <div class="headings">Pages</div>
     <div class="headings">Link</a></div>
-    <div class="headings">Read</div>
+    <div class="headings">Read (Toggle)</div>
     <div class="headings">Edit</div>
     <div class="headings">Delete</div>
   </div>
@@ -52,7 +43,7 @@
 
   <div id="bookCreator">
     <button id="creatorCloseBtn">x</button>
-    <div id="creatorLabel">Book Creator</div><br>
+    <div id="creatorLabel">New Book Creator</div><br>
     <label for="newTitle">Title:</label>
     <input type="text" id="newTitle" name="newTitle" required="required"><br>
     <label for="newAuthor">Author:</label>
@@ -85,8 +76,8 @@
     <button id="submitEditBtn">Submit</button>
   </div>
 
-  <button id="clearAll">Clear All</button><br>
-  <button id="sample3Reset">Reset With 3 Sample Books</button>
+  <button id="clearAll" class="bottomBtn">Clear All</button><br>
+  <button id="sample3Reset" class="bottomBtn">Reset With 3 Sample Books</button>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>

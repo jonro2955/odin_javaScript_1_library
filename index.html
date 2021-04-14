@@ -10,34 +10,17 @@
 <body>
 
   <h1>Virtual Library</h1>
-
-  <p>This project is an exercise in JavaScript object oriented 
-    programming and cloud data storage. The focus for this project 
-    is on back end development, so the visual presentation is left 
-    intentionally sparse.</p>
-
-  <p>Please select from the following options:</p><br>
-
-  <a id="indexOption" class="button" href="cloud.html">Cloud Storage</a><br>
-
-  <p>
-    The Cloud Storage option uses Google's 
-    <a target="blank" href="https://firebase.google.com/">Firebase</a> 
-    cloud database service to store your books in a remote server (AKA 
-    "The Cloud"). 
-  </p>
-
-
-  <a id="indexOption" class="button"  href="local.html">Local Storage</a><br>
-
-  <p>
-  The Local Storage option uses your browser's 
-  localStorage API to store your books in your 
-  device's memory.
-  </p>
-
-  <div id="credits">Built by&nbsp;<a href="https://github.com/jonro2955" target="_blank">Jonathan Ro</a>
-    <br>As part of&nbsp;<a href="https://www.theodinproject.com/paths/full-stack-javascript?" target="_blank">The Odin Project</a>&nbsp;curriculum
+  
+  <div id="navDiv">
+    <button id="navBtn">    
+      <a id="indexOption" class="button" href="cloud.html">Cloud Storage</a><br>
+    </button>
+    <button id="navBtn">    
+      <a id="indexOption" class="button"  href="local.html">Local Storage</a><br>
+    </button>
+  </div>
+    <div id="credits">Built by&nbsp;<a href="https://github.com/jonro2955" target="_blank">Jonathan Ro</a>
+    <br>For&nbsp;<a href="https://www.theodinproject.com/paths/full-stack-javascript?" target="_blank">The Odin Project</a>&nbsp;Curriculum
   </div> 
 
   <script src="index.js"></script>

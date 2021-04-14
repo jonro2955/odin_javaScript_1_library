@@ -219,7 +219,6 @@ function displayStorage(){
       const readBtn = document.createElement("button");
       readBtn.setAttribute("class", "bookEntryBtns");
       newBookDiv.appendChild(readBtn);
-      readBtn.setAttribute("class", "bookEntryBtns");
       if (localStorage.getItem(`book${i}-read`) === "true"){  //access the precise item from localStorage
         readBtn.textContent = "Yes";
       } else {
@@ -267,9 +266,9 @@ function displayStorage(){
 function initialize(){
   if(libraryArray.length === 0 && !localStorage.getItem("numberOfBooks")){ 
     console.log("Resetting with 3 samples. synchStorageToLibrary. displayStorage"); 
-    let sampleBook1 = new Book("Harry Potter and the Philosopher's Stone", "J. K. Rowling", 256, "https://www.amazon.com/Harry-Potter-Philosophers-Stone-Rowling/dp/0747532699/ref=sr_1_1?dchild=1&keywords=0747532699&qid=1615483278&sr=8-1", true);
-    let sampleBook2 = new Book("The Hobbit", "J. R. R. Tolkien", 310, "https://www.amazon.com/Hobbit-There-Again-Tolkien-Paperback/dp/B00OHXKIWG/ref=sr_1_6?crid=QGNW557WYSY&dchild=1&keywords=the+hobbit+book&qid=1615483956&sprefix=the+hobbit+%2Caps%2C251&sr=8-6", false);
-    let sampleBook3 = new Book("The Da Vinci Code", "Dan Brown", 689, "https://www.amazon.com/DaVinci-Brown-Hardcover-jacket-Copyrighted/dp/B003UI24DA/ref=sr_1_4?dchild=1&keywords=the+davinci+code+book&qid=1615484100&sr=8-4", true);
+    let sampleBook1 = new Book("Sample Book 1: Harry Potter and the Philosopher's Stone", "J. K. Rowling", 256, "https://www.amazon.com/Harry-Potter-Philosophers-Stone-Rowling/dp/0747532699/ref=sr_1_1?dchild=1&keywords=0747532699&qid=1615483278&sr=8-1", true);
+    let sampleBook2 = new Book("Sample Book 2: The Hobbit", "J. R. R. Tolkien", 310, "https://www.amazon.com/Hobbit-There-Again-Tolkien-Paperback/dp/B00OHXKIWG/ref=sr_1_6?crid=QGNW557WYSY&dchild=1&keywords=the+hobbit+book&qid=1615483956&sprefix=the+hobbit+%2Caps%2C251&sr=8-6", false);
+    let sampleBook3 = new Book("Sample Book 3: The Da Vinci Code", "Dan Brown", 689, "https://www.amazon.com/DaVinci-Brown-Hardcover-jacket-Copyrighted/dp/B003UI24DA/ref=sr_1_4?dchild=1&keywords=the+davinci+code+book&qid=1615484100&sr=8-4", true);
     libraryArray.push(sampleBook1);
     libraryArray.push(sampleBook2);
     libraryArray.push(sampleBook3);

@@ -15,19 +15,19 @@ function Book(title, author, pages, url, read){
 
 const sampleBooks = {
   "books": [{
-    "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+    "title": "Sample Book 1: The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
     "author": "Walter Isaacson",
     "pages": 560,
     "url": "https://www.amazon.com/dp/1982115858?tag=NYTBSREV-20&tag=NYTBSREV-20",
     "read": true
   }, {
-    "title": "The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together",
+    "title": "Sample Book 2: The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together",
     "author": "Heather McGhee",
     "pages": 448,
     "url": "https://www.amazon.com/dp/0525509569?tag=NYTBSREV-20&tag=NYTBSREV-20",
     "read": true
   }, {
-    "title": "Greenlights",
+    "title": "Sample Book 3: Greenlights",
     "author": "Matthew McConaughey",
     "pages": 304,
     "url": "https://www.amazon.com/dp/0593139135?tag=NYTBSREV-20&tag=NYTBSREV-20",
