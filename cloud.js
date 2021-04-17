@@ -5,12 +5,14 @@
  * applied directly onto the cloud objects instead of altering a local version 
  * and copying it to the cloud. */
 
-function Book(title, author, pages, url, read){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.url = url;
-  this.read = read;
+ class Book {
+  constructor(title, author, pages, url, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.url = url;
+    this.read = read;
+  }
 }
 
 const sampleBooks = {

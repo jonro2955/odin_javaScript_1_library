@@ -1,40 +1,42 @@
-/*This program uses the array libraryArray to store all book objects.
-The use of this array is an unnecessary feature of the app which was an 
-part of the original project instructions which remained as I morphed the 
-app from a non-persistent state app to one that uses local
-storage to become a persistent state app.
-
-New book object entries are first inserted into this array, then the
+/*This program uses the array libraryArray as an intermediary to store 
+book objects. The use of this array was a part of the original project 
+instructions. The array alone works fine if we are creating a non-persistent 
+app, but if we want a persistent state app that uses local storage, the array 
+is redundant because it gets erased every time you reload the browser. 
+But because I morphed the app from a non-persistent state app to one 
+that uses local storage, the app got built around the array with functions 
+to mirror the storage to the array as neccessary and vice versa.
+New book object entries are first inserted into the array, then the
 local storage is updated to mirror this array immediately after each time 
-the array or its contents are altered. Since the libraryArray is erased when 
-the page is reloaded, at startup, the app's initialization function checks 
-if there are books stored in local storage, and if so, synchronizes the 
+the array or its contents are altered. Since the array is erased when 
+the page is closed, at each startup, the app checks if there are any books 
+already stored in local storage, and if so, it synchronizes the 
 array to mirror the books stored in memory. */
 
 let libraryArray = [];
 
-//constructor
-function Book(title, author, pages, url, read){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.url = url;
-  this.read = read;
-}
-
-Book.prototype.edit = function(titleNew, authorNew, pagesNew, urlNew, readNew){
-  this.title = titleNew;
-  this.author = authorNew;
-  this.pages = pagesNew;
-  this.url = urlNew;
-  this.read = readNew;
-}
-
-Book.prototype.toggleRead = function(){
-  if(this.read){
-    this.read = false;
-  } else {
-    this.read = true;
+//class
+class Book {
+  constructor(title, author, pages, url, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.url = url;
+    this.read = read;
+  }
+  edit(titleNew, authorNew, pagesNew, urlNew, readNew){
+    this.title = titleNew;
+    this.author = authorNew;
+    this.pages = pagesNew;
+    this.url = urlNew;
+    this.read = readNew;
+  }
+  toggleRead(){
+    if(this.read){
+      this.read = false;
+    } else {
+      this.read = true;
+    }
   }
 }
 
