@@ -1,17 +1,11 @@
-/*This program uses the array libraryArray as an intermediary to store 
-book objects. The use of this array was a part of the original project 
-instructions. The array alone works fine if we are creating a non-persistent 
-app, but if we want a persistent state app that uses local storage, the array 
-is redundant because it gets erased every time you reload the browser. 
-But because I morphed the app from a non-persistent state app to one 
-that uses local storage, the app got built around the array with functions 
-to mirror the storage to the array as neccessary and vice versa.
-New book object entries are first inserted into the array, then the
-local storage is updated to mirror this array immediately after each time 
-the array or its contents are altered. Since the array is erased when 
-the page is closed, at each startup, the app checks if there are any books 
-already stored in local storage, and if so, it synchronizes the 
-array to mirror the books stored in memory. */
+/*The local storage version uses the libraryArray as an intermediary to store 
+book objects as per the original project instructions, even though it does not
+need such an arrangement.
+Since I changed the app from a non-persistent state app to a persistent one, 
+the app got built around the array. To make local storage work with the array,
+the array is mirrored to the local storage immediately after each time it is 
+changed. And since the array is erased when the page is closed, at each startup, 
+the local storage is mirrored to the array. */
 
 let libraryArray = [];
 

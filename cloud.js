@@ -1,11 +1,4 @@
-/**For the cloud version, all data will be stored and retrieved directly 
- * from the cloud without an intermediary holding array. With this setup,
- * there is no need for prototype methods to change the book objects as 
- * once the object is created and stored to the cloud, any changes will be 
- * applied directly onto the cloud objects instead of altering a local version 
- * and copying it to the cloud. */
-
- class Book {
+class Book {
   constructor(title, author, pages, url, read){
     this.title = title;
     this.author = author;
