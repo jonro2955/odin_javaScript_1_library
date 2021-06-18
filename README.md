@@ -1,7 +1,8 @@
 # odin_javaScript_1_library
 
-This is the first project from The Odin Project's Full Stack JavaScript curriculum. Live preview:
-https://jonro2955.github.io/odin_javaScript_1_library/
+Preview: https://jonro2955.github.io/odin_javaScript_1_library/
+
+This is the first project from The Odin Project's Full Stack JavaScript curriculum, focusing on using objects and object constructors in JavaScript. Objects allow us to enclose related variables and functions that often use or act on those variables into an enclosure to create more organized (modular) and secure programs. Note: the classes implemented in the original version of this project were later converted to classes as part of the assignment for the lesson on JavaScript classes.
 
 It is a simple library app that allows users to maintain a catalogue of book data. There are 2 versions: 
 (1) The cloud version uses my Google Firebase database to store the data in the cloud. 
