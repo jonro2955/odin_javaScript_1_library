@@ -62,9 +62,9 @@ editorCloseBtn.addEventListener("click", () => {
   document.querySelector("#bookEditor").style.display = "none";
 });
 
-//on submitNewBtn click: create a new book and push it into firebase
-const submitNewBtn = document.querySelector("#submitNewBtn");
-submitNewBtn.addEventListener("click", () => {
+//on bookCreator form submit: create a new book and push it into firebase
+const bookCreatorForm = document.querySelector("#bookCreator");
+bookCreatorForm.addEventListener("submit", () => {
   let newTitle = document.getElementById("newTitle").value; //string
   let newAuthor = document.getElementById("newAuthor").value; //string
   let newPages = document.getElementById("newPages").value; //number
@@ -75,14 +75,10 @@ submitNewBtn.addEventListener("click", () => {
   } else {
     newStatus = false;
   }
-  if(newTitle != "" && newAuthor != ""){
-    let newBook = new Book(newTitle, newAuthor, newPages, newURL, newStatus);
-    cloudBooksRef.push(newBook);
-    displayStorage();
-    closeCreator();
-  } else {
-    alert("Please fill out the 'Title' and 'Author' fields to continue.")
-  }
+  let newBook = new Book(newTitle, newAuthor, newPages, newURL, newStatus);
+  cloudBooksRef.push(newBook);
+  displayStorage();
+  closeCreator();
 });
 
 // Clear All button 

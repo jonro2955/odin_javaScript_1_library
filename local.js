@@ -48,8 +48,8 @@ creatorCloseBtn.addEventListener("click", () => {
 
 /*book creator submit button: when clicked, creates a book using the input values, 
 pushes it into the array, synchronizes the storage to the array, and updates the display*/
-const submitNewBtn = document.querySelector("#submitNewBtn");
-submitNewBtn.addEventListener("click", () => {
+const bookCreatorForm = document.querySelector("#bookCreator");
+bookCreatorForm.addEventListener("submit", () => {
   let newTitle = document.getElementById("newTitle").value; //string
   let newAuthor = document.getElementById("newAuthor").value; //string
   let newPages = document.getElementById("newPages").value; //number
@@ -60,16 +60,11 @@ submitNewBtn.addEventListener("click", () => {
   } else {
     newStatus = false;
   }
-  //only create if the first 2 fields are filled
-  if(newTitle != "" && newAuthor != ""){
-    let newBook = new Book(newTitle, newAuthor, newPages, newURL, newStatus);
-    libraryArray.push(newBook);
-    synchStorageToLibrary(); //always synchStorageToLibrary when libraryArray changes
-    displayStorage(); //always displayStorage when local storage is updated
-    closeCreator();
-  } else {
-    alert("Please fill out the 'Title' and 'Author' fields to continue.")
-  }
+  let newBook = new Book(newTitle, newAuthor, newPages, newURL, newStatus);
+  libraryArray.push(newBook);
+  synchStorageToLibrary(); //always synchStorageToLibrary when libraryArray changes
+  displayStorage(); //always displayStorage when local storage is updated
+  closeCreator();
 });
 
 /*book edit button function: populate the edit form using the book at index in storage*/
