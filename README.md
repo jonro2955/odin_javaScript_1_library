@@ -1,13 +1,22 @@
-# odin_javaScript_1_library
-https://jonro2955.github.io/odin_javaScript_1_library/
+# Library App
 
-This is the 1st project from The Odin Project's Full Stack "JavaScript" curriculum: https://www.theodinproject.com/paths/full-stack-javascript. 
+This is a virtual library app that allows users to store book information either on the user's device memory or in the cloud. 
+There are 2 versions: The first is a cloud storage version using Google's Firebase database to store the data in the cloud. 
+The second is a local storage version using the user's device memory allocated to the users' internet browser that is being used to view the app. 
 
-It is a library app that allows users to store book data. There are 2 versions: 
-(1) The cloud version uses Google's Firebase database to store the data in the cloud. 
-(2) The local storage version uses the users' device (browser local storage) to store the data. 
+<hr/>
 
-Focus Areas:
+### Focus 
+
 - Objects and object constructors in JavaScript
 - Local Storage API
 - Firebase API (Authentication, Database)
+
+### Acknowledgements
+
+[The Odin Project](https://www.theodinproject.com/)
+
+
+### License
+
+[ISC](https://opensource.org/licenses/ISC)
