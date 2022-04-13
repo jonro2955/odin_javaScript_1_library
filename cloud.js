@@ -31,6 +31,11 @@ const sampleBooks = {
 }
 
 //firebase setup
+/**
+ * In this file, we can start using functions from the firebase SDK such as 
+ * firebase.initializeApp() without using the "import" keyword because this file 
+ * is placed as a <script> element in cloud.html below the firebase SDK scripts
+ * */
 var firebaseConfig = {
   apiKey: "AIzaSyBoxV-TQFc4CXXhQmjOPkE5jyUoJXHLN-A",
   authDomain: "odin-library-1075e.firebaseapp.com",
