@@ -9,7 +9,7 @@ The second is a local storage version using the user's device memory allocated t
 
 <hr/>
 
-### Focus 
+### Objectives 
 
 - Objects and object constructors in JavaScript
 - Local Storage API
