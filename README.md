@@ -1,6 +1,6 @@
 # Library App
 
-A virtual library app that allows users to store book information either on the user's device memory or in the cloud. 
+This is a virtual library app that allows users to store book information either on the user's device memory or in the cloud. 
 
 [Live Demo](https://jonro2955.github.io/odin_javaScript_1_library/)
 
@@ -9,7 +9,7 @@ The second is a local storage version using the user's device memory allocated t
 
 <hr/>
 
-### Objectives 
+### Learning Objectives 
 
 - Objects and object constructors in JavaScript
 - Local Storage API
